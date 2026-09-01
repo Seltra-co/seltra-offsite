@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://offsite.paystack.com"),
+  metadataBase: new URL("https://offsite.seltra.co"),
   title: "Seltra Offsite 2026 — Emergence",
   description:
     "Building autonomous commerce for the next million merchants. Seltra Offsite 2026 · Emergence.",
@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     "Emergence",
     "Commerce",
     "Merchants",
-    "Paystack",
     "2026",
   ],
   icons: {
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
     title: "Seltra Offsite 2026 — Emergence",
     description:
       "Building autonomous commerce for the next million merchants. Seltra Offsite 2026 · Emergence.",
-    url: "https://offsite.paystack.com",
+    url: "https://offsite.seltra.co",
     siteName: "Seltra Offsite",
     images: [
       {
