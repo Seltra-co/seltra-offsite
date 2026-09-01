@@ -57,9 +57,7 @@ export function getEventStatus(): EventStatus {
 }
 
 // ── Brochure ─────────────────────────────────────────────────────
-// Paste the Cloudinary PDF link here once it's uploaded. While empty,
-// the /brochure page automatically renders the "coming soon" empty state.
-export const BROCHURE_URL = "";
+export const BROCHURE_URL = "/seltra_offsite_2026.pdf";
 
 // ── Agenda: session-level detail ───────────────────────────────────
 export type AgendaSession = {
@@ -76,82 +74,82 @@ export const AGENDA: AgendaSession[] = [
   {
     id: "s1",
     number: "01",
-    title: "Where We Really Are",
-    presenter: "William",
+    title: "Welcome & Opening",
+    presenter: "Seltra team",
     time: "9:15 – 9:35 AM",
     format: "Presentation",
     objective:
-      "Set the tone for the whole day — brutally honest, no marketing language. Walk the room through exactly where Seltra stands, unfiltered.",
+      "A warm welcome, opening reflections, and a shared look at the purpose of the day.",
   },
   {
     id: "s2",
     number: "02",
-    title: "Product, Engineering & the V5 Architecture",
-    presenter: "Jerry",
+    title: "What We’re Building",
+    presenter: "Seltra team",
     time: "9:35 – 9:55 AM",
     format: "Presentation",
     objective:
-      "Translate the honest snapshot into what's technically true — what v4 proved, what's fragile underneath it, and what v5's architecture needs to become.",
+      "A high-level view of our mission, focus areas, and the opportunities ahead.",
   },
   {
     id: "s3",
     number: "03",
-    title: "Merchant Truth & the GTM Engine",
-    presenter: "Japheth",
+    title: "Merchant Experience",
+    presenter: "Seltra team",
     time: "9:55 – 10:15 AM",
     format: "Presentation",
     objective:
-      "Start with what merchants have actually done, not what we assume they want — likely the most important session of the day.",
+      "Exploring how we create better experiences for the people and businesses we serve.",
   },
   {
     id: "s4",
     number: "04",
-    title: "The V5 Wow Moment",
-    presenter: "Daniel",
+    title: "Product & Design",
+    presenter: "Seltra team",
     time: "10:30 – 10:50 AM",
     format: "Presentation",
     objective:
-      "Identify and demo the one experience that makes someone understand Seltra immediately — the moment v5 is designed around.",
+      "A look at the product direction, user experience thinking, and what we want to improve next.",
   },
   {
     id: "s5",
     number: "05",
-    title: "Marketing, Content & Demand Generation",
-    presenter: "Divine",
+    title: "Growth & Communication",
+    presenter: "Seltra team",
     time: "10:50 – 11:10 AM",
     format: "Presentation",
     objective:
-      "Reframe content from social posting to demand generation — a measurable part of the funnel.",
+      "How we share our story, reach the right audiences, and support sustainable growth.",
   },
   {
     id: "s6",
     number: "06",
-    title: "ICP, Business Model, January Targets & Accelerator Strategy",
-    presenter: "William",
+    title: "Team Alignment Session",
+    presenter: "Seltra team",
     time: "11:10 AM – 12:30 PM",
     format: "Workshop",
     objective:
-      "The longest and most consequential block of the day. Four decisions get made here, in order, with the whole team in the room.",
+      "A collaborative discussion on priorities, focus, and how we move forward together.",
   },
   {
     id: "s7",
     number: "07",
-    title: "Ownership, 120-Day Plan & the Seltra Commitment",
-    presenter: "William + all",
+    title: "Next Steps",
+    presenter: "Seltra team",
     time: "1:15 – 2:00 PM",
     format: "Workshop",
     objective:
-      "Convert everything decided this morning into individual accountability — role ownership, then personal commitments.",
+      "Identifying the key actions, ownership areas, and commitments for the months ahead.",
   },
   {
     id: "s8",
     number: "08",
-    title: "Closing — Recap of the 10 Decisions & Next Steps",
-    presenter: "William",
+    title: "Closing Reflections",
+    presenter: "Seltra team",
     time: "2:00 – 2:20 PM",
     format: "Presentation",
     objective:
-      "Leave no ambiguity about what was actually decided. Read back each decision and confirm the room agrees.",
+      "A final wrap-up of the day’s ideas, decisions, and the path forward.",
   },
 ];
 
@@ -164,19 +162,19 @@ export type ScheduleItem = {
 };
 
 export const SCHEDULE: ScheduleItem[] = [
-  { time: "8:30 – 9:00 AM", title: "Arrival & Setup", lead: "—", format: "Informal" },
-  { time: "9:00 – 9:15 AM", title: "Opening Prayer & Introduction", lead: "William", format: "Opening" },
-  { time: "9:15 – 9:35 AM", title: "Session 1 — Where We Really Are", lead: "William", format: "Presentation" },
-  { time: "9:35 – 9:55 AM", title: "Session 2 — Product, Engineering & the V5 Architecture", lead: "Jerry", format: "Presentation" },
-  { time: "9:55 – 10:15 AM", title: "Session 3 — Merchant Truth & the GTM Engine", lead: "Japheth", format: "Presentation" },
+  { time: "8:30 – 9:00 AM", title: "Arrival & Welcome", lead: "Seltra team", format: "Informal" },
+  { time: "9:00 – 9:15 AM", title: "Opening Remarks", lead: "Seltra team", format: "Opening" },
+  { time: "9:15 – 9:35 AM", title: "Session 1 — Welcome & Setting the Tone", lead: "Seltra team", format: "Presentation" },
+  { time: "9:35 – 9:55 AM", title: "Session 2 — What We’re Building", lead: "Seltra team", format: "Presentation" },
+  { time: "9:55 – 10:15 AM", title: "Session 3 — Merchant Experience", lead: "Seltra team", format: "Presentation" },
   { time: "10:15 – 10:30 AM", title: "Break", lead: "—", format: "Break" },
-  { time: "10:30 – 10:50 AM", title: "Session 4 — The V5 Wow Moment", lead: "Daniel", format: "Presentation" },
-  { time: "10:50 – 11:10 AM", title: "Session 5 — Marketing, Content & Demand Generation", lead: "Divine", format: "Presentation" },
-  { time: "11:10 AM – 12:30 PM", title: "Session 6 — ICP, Business Model, January Targets & Accelerator Strategy", lead: "William", format: "Workshop" },
+  { time: "10:30 – 10:50 AM", title: "Session 4 — Product & Design", lead: "Seltra team", format: "Presentation" },
+  { time: "10:50 – 11:10 AM", title: "Session 5 — Growth & Communication", lead: "Seltra team", format: "Presentation" },
+  { time: "11:10 AM – 12:30 PM", title: "Session 6 — Team Alignment", lead: "Seltra team", format: "Workshop" },
   { time: "12:30 – 1:15 PM", title: "Lunch", lead: "—", format: "Informal" },
-  { time: "1:15 – 2:00 PM", title: "Session 7 — Ownership, 120-Day Plan & the Seltra Commitment", lead: "William + all", format: "Workshop" },
-  { time: "2:00 – 2:20 PM", title: "Closing — Recap of the 10 Decisions & Next Steps", lead: "William", format: "Presentation" },
-  { time: "2:20 – 2:30 PM", title: "Team Photo & Close", lead: "—", format: "Close" },
+  { time: "1:15 – 2:00 PM", title: "Session 7 — Next Steps", lead: "Seltra team", format: "Workshop" },
+  { time: "2:00 – 2:20 PM", title: "Closing Reflections", lead: "Seltra team", format: "Presentation" },
+  { time: "2:20 – 2:30 PM", title: "Group Photo & Close", lead: "—", format: "Close" },
 ];
 
 // ── Home nav cards ──────────────────────────────────────────────

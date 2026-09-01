@@ -98,9 +98,14 @@ export default function Hero() {
             <span className={`h-2.5 w-2.5 rounded-full ${statusStyles[status].dot}`} />
             {status}
           </span>
-          <span className={`text-sm font-medium ${statusStyles[status].text} sm:text-base md:text-lg`}>
-            {EVENT.date} · {EVENT.time}
-          </span>
+          <div className="flex flex-col items-start gap-1 text-left sm:items-end">
+            <span className={`text-sm font-medium ${statusStyles[status].text} sm:text-base md:text-lg`}>
+              {EVENT.date} · {EVENT.time}
+            </span>
+            <span className="text-xs font-medium text-white/65 sm:text-sm md:text-base">
+              {EVENT.venue}
+            </span>
+          </div>
         </div>
 
         <h2 className="mt-2 text-[clamp(2rem,7vw,4rem)] font-semibold tracking-[-0.06em] text-white">
