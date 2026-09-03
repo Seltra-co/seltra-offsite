@@ -25,7 +25,7 @@ export const FOUNDING_TEAM = [
   {
     name: "Jerry John Richman",
     role: "Co-founder, CTO",
-    image: "/cf2.jpeg",
+    image: "/cf2.png",
   },
   {
     name: "Japheth Tetteh",
